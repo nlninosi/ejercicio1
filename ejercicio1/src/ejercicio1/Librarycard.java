@@ -10,19 +10,19 @@ package ejercicio1;
  * @author Nicolas
  */
 public class Librarycard {
-    public String owner;
     public int borrowcnt;
-    public void librarycard(){
-        owner="nadie";
-        borrowcnt=0;
+    public Student owner;
+    public Librarycard(Student owner, int borrowcnt){
+        this.owner=owner;
+        this.borrowcnt=borrowcnt;
     }
     public int getNumberofbooks(){
         return borrowcnt;
     }
-    public String getOwner(){
+    public Student getOwner(){
         return owner;
     }
-    public void setOwner(){
+    public void setOwner( Student student){
         owner=this.owner;
     }
     @Override

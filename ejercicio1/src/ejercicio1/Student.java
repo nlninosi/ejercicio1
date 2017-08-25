@@ -4,7 +4,6 @@
  * and open the template in the editor.
  */
 package ejercicio1;
-import java.util.Scanner;
 /**
  *
  * @author Nicolas
@@ -12,9 +11,9 @@ import java.util.Scanner;
 public class Student {
     public String name;
     public String email;
-    public void student(){
-        name="...";
-        email="...";
+    public void Student(String name,String email){
+        this.name=name;
+        this.email=email;
     }
     public void getName(){
         System.out.println(this.name);
@@ -29,4 +28,8 @@ public class Student {
      public String setEmail(String correo){
         return this.email =correo;
     } 
+    @Override
+    public String toString() {
+        return "Estudiante{nombre:" +name+ ", email=" + email + ",}";
+    }
 }

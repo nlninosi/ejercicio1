@@ -16,10 +16,13 @@ public class Ejercicio1 {
      */
     public static void main(String[] args) {
         // TODO code application logic here
-        Librarycard c1=new Librarycard();
         Student s1=new Student();
-        s1.email="nlninosi";
-        s1.setEmail("jonsnow");
+        s1.email="jj@javauniv.com";
+        s1.name="jon java";        
+        Librarycard c1=new Librarycard(s1,0);
+        Librarycard c2=new Librarycard(s1,3);
+        System.out.println(c1);
+        System.out.println(c2);
     }
     
 }
