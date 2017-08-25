@@ -16,16 +16,19 @@ public class Librarycard {
         owner="nadie";
         borrowcnt=0;
     }
-    public void getNumberofbooks(){
-        System.out.println(this.borrowcnt);
+    public int getNumberofbooks(){
+        return borrowcnt;
     }
-    public void getOwner(){
-        System.out.println(this.owner);
+    public String getOwner(){
+        return owner;
     }
     public void setOwner(){
         owner=this.owner;
     }
-    
+    @Override
+    public String toString() {
+        return "Libray Card{" + "numero de libros=" +borrowcnt+ ", dueño=" + owner + ",}";
+    }
     
     
 }
