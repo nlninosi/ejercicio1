@@ -7,7 +7,7 @@ package ejercicio1;
 
 /**
  *
- * @author Nicolas
+ * @author Nicolas Niño Sierra
  */
 public class Ejercicio1 {
 
